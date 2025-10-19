@@ -39,28 +39,29 @@ const Navbar = () => {
             alt="logo"
           />
         </Link>
-        {/* Desctop Nav */}
+        {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-4 lg:gap-8">
           {navLinks.map((item, index) => (
-            <a
+            <Link
               className={`group flex flex-col gap-0.5 ${
                 isScrolled ? "text-gray-800" : "text-white"
               } transition-all duration-300`}
               key={index}
-              href={item.path}
+              to={item.path}
             >
               {item.name}
               <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`}></div>
-            </a>
+            </Link>
           ))}
           <div />
-          <button
-            className={`border px-4 py-1 rounded-full text-sm font-lightcursor-pointer ${
+          <Link
+            to="/dashboard"
+            className={`border px-4 py-1 rounded-full text-sm font-light cursor-pointer ${
               isScrolled ? "text-black" : "text-white"
             } transition-all duration-300`}
           >
-            Dashpord
-          </button>
+            Dashboard
+          </Link>
         </div>
         {/* Desctop Right */}
         <div className="hidden md:flex items-center gap-3">
@@ -86,15 +87,15 @@ const Navbar = () => {
             <img className="h-6.5" src={assets.closeIcon} alt="menu-Icon" />
           </button>
           {navLinks.map((item, index) => (
-            <a
+            <Link
               key={index}
-              href={item.path}
+              to={item.path}
               onClick={() => setIsMenuOpen(false)}
             >
               {item.name}
-            </a>
+            </Link>
           ))}
-          <button className="border rounded-full px-5 py-2 text-sm">Dashpord</button>
+          <Link to="/dashboard" className="border rounded-full px-5 py-2 text-sm">Dashboard</Link>
           <button className="bg-black rounded-full px-5 py-2 text-white">Login</button>
         </div>
       </nav>

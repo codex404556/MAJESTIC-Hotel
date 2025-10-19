@@ -19,6 +19,7 @@ const App = () => {
           <Route path="/rooms" element={<Rooms />} />
           <Route path="/rooms/:id" element={<RoomsDetailes />} />
           <Route path="/my-bookings" element={<Booking />} />
+          <Route path="/dashboard" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-4xl font-bold">Dashboard Coming Soon!</h1></div>} />
         </Routes>
       </div>
       <Footer />
