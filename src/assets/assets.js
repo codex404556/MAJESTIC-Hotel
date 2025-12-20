@@ -99,19 +99,19 @@ export const testimonials = [
 
 // Facility Icon
 export const facilityIcons = {
-    "Free WiFi": assets.freeWifiIcon,
-    "Free Breakfast": assets.freeBreakfastIcon,
-    "Room Service": assets.roomServiceIcon,
-    "Mountain View": assets.mountainIcon,
-    "Pool Access": assets.poolIcon,
+    "Free WiFi": freeWifiIcon,
+    "Free Breakfast": freeBreakfastIcon,
+    "Room Service": roomServiceIcon,
+    "Mountain View": mountainIcon,
+    "Pool Access": poolIcon,
 };
 
 // For Room Details Page
 export const roomCommonData = [
-    { icon: assets.homeIcon, title: "Clean & Safe Stay", description: "A well-maintained and hygienic space just for you." },
-    { icon: assets.badgeIcon, title: "Enhanced Cleaning", description: "This host follows Staybnb's strict cleaning standards." },
-    { icon: assets.locationFilledIcon, title: "Excellent Location", description: "90% of guests rated the location 5 stars." },
-    { icon: assets.heartIcon, title: "Smooth Check-In", description: "100% of guests gave check-in a 5-star rating." },
+    { icon: homeIcon, title: "Clean & Safe Stay", description: "A well-maintained and hygienic space just for you." },
+    { icon: badgeIcon, title: "Enhanced Cleaning", description: "This host follows Staybnb's strict cleaning standards." },
+    { icon: locationFilledIcon, title: "Excellent Location", description: "90% of guests rated the location 5 stars." },
+    { icon: heartIcon, title: "Smooth Check-In", description: "100% of guests gave check-in a 5-star rating." },
 ];
 
 // User Dummy Data
